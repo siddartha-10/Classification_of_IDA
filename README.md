@@ -53,6 +53,6 @@ please fork the repo and create a pull request. You can also simply open an issu
 <!-- CONTACT -->
 ## Contact
 
-Siddartha Pullakhandam - [Twitter](https://twitter.com/Siddartha_10) - [Email](pullakhandam.siddartha@gmail.com)
+Siddartha Pullakhandam - [Twitter](https://twitter.com/Siddartha_10) - [Gmail](pullakhandam.siddartha@gmail.com) - [LinkedIn](https://www.linkedin.com/in/siddartha-pullakhandam/)
 
 Project Link: [project repo](https://github.com/siddartha-10/Classification_of_IDA)
