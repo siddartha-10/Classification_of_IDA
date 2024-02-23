@@ -1,0 +1,9 @@
+pandas = 2.0.0
+matplotlib = 3.7.1
+shap = 0.43.0
+sklearn = 0.0.post4
+xgboost = 2.0.0
+prettytable = 3.9.0
+imbalanced-learn = 0.11.0
+Flask = 2.3.3
+scipy = 1.10.1

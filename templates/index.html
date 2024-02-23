@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML Model Prediction</title>
+    <title>ML Model Prediction Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,27 +21,36 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 400px;
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+            box-sizing: border-box; 
         }
 
         h1 {
             text-align: center;
+            width: 100%;
         }
 
         label {
             font-weight: bold;
+            flex: 0 0 calc(50% - 10px); 
+            margin-bottom: 10px; 
         }
 
         input[type="text"] {
-            width: calc(100% - 20px);
+            flex: 0 0 calc(50% - 10px); 
             margin-bottom: 10px;
             padding: 8px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            box-sizing: border-box; 
         }
 
         input[type="submit"] {
-            width: 100%;
+            width: 100%; 
             background-color: #007bff;
             color: #fff;
             padding: 10px;
@@ -56,50 +65,40 @@
     </style>
 </head>
 <body>
-    <h1>ML Model Prediction</h1>
+    <h1>Iron Deficiency Anemia Predictor</h1>
     <form id="prediction-form" action="/predict" method="post">
-        <!-- Input fields for features -->
-        <label for="RIAGENDR">Gender (1 for Male, 2 for Female):</label><br>
-        <input type="text" name="RIAGENDR" id="RIAGENDR"><br>
+
+        <label for="RIAGENDR">Gender (1 for Male, 2 for Female):</label>
+        <input type="text" name="RIAGENDR" id="RIAGENDR" required>
         
-        <label for="RIDAGEYR">Age (in years):</label><br>
-        <input type="text" name="RIDAGEYR" id="RIDAGEYR"><br>
+        <label for="RIDAGEYR">Age (in years):</label>
+        <input type="text" name="RIDAGEYR" id="RIDAGEYR" required>
         
-        <label for="RIDEXPRG">Pregnancy Status (1 for Yes, 0 for No):</label><br>
-        <input type="text" name="RIDEXPRG" id="RIDEXPRG"><br>
+        <label for="RIDEXPRG">Pregnancy Status (1 for Yes, 0 for No):</label>
+        <input type="text" name="RIDEXPRG" id="RIDEXPRG" required>
         
-        <label for="LBDLYMNO">LYMNO:</label><br>
-        <input type="text" name="LBDLYMNO" id="LBDLYMNO"><br>
+        <label for="LBDLYMNO">LYMNO:</label>
+        <input type="text" name="LBDLYMNO" id="LBDLYMNO" required>
         
-        <label for="LBDMONO">MONO:</label><br>
-        <input type="text" name="LBDMONO" id="LBDMONO"><br>
+        <label for="LBDMONO">MONO:</label>
+        <input type="text" name="LBDMONO" id="LBDMONO" required>
         
-        <label for="LBXHGB">HGB:</label><br>
-        <input type="text" name="LBXHGB" id="LBXHGB"><br>
+        <label for="LBXHGB">HGB:</label>
+        <input type="text" name="LBXHGB" id="LBXHGB" required>
         
-        <label for="LBXHCT">HCT:</label><br>
-        <input type="text" name="LBXHCT" id="LBXHCT"><br>
+        <label for="LBXHCT">HCT((RBC × MCV)/10):</label>
+        <input type="text" name="LBXHCT" id="LBXHCT" required>
         
-        <label for="LBXMCVSI">MCVSI:</label><br>
-        <input type="text" name="LBXMCVSI" id="LBXMCVSI"><br>
+        <label for="LBXMCVSI">MCVSI:</label>
+        <input type="text" name="LBXMCVSI" id="LBXMCVSI" required>
         
-        <label for="LBXMCHSI">MCHSI:</label><br>
-        <input type="text" name="LBXMCHSI" id="LBXMCHSI"><br>
+        <label for="LBXMCHSI">MCHSI:</label>
+        <input type="text" name="LBXMCHSI" id="LBXMCHSI" required>
         
-        <label for="LBXRDW">RDW:</label><br>
-        <input type="text" name="LBXRDW" id="LBXRDW"><br>
+        <label for="LBXRDW">RDW:</label>
+        <input type="text" name="LBXRDW" id="LBXRDW" required>
         
         <input type="submit" value="Predict">
     </form>
-
-    <script>
-        // Submit form when Enter key is pressed
-        document.getElementById("prediction-form").addEventListener("keydown", function(event) {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                document.getElementById("prediction-form").submit();
-            }
-        });
-    </script>
 </body>
 </html>
