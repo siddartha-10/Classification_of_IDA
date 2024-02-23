@@ -38,7 +38,7 @@ The above command will Initiate the Flask application and visit ```http://localh
 <!-- CONTRIBUTING -->
 ## Feedback & Collaboration
 Discover any anomalies or areas of improvement? Raise an issue in the repository. We are open to collaborations and value contributions. 
-please fork the repo and create a pull request. You can simply open an issue or you can contact me by using the details given below.
+please fork the repo and create a pull request. You can simply open an issue or don't hesitate to contact me.
 Thanks again!
 
 1. Fork the Project
