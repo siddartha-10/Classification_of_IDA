@@ -6,7 +6,7 @@ Our project aims to use Machine learning to help doctors identify a type of anem
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
