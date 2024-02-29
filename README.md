@@ -1,7 +1,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Our project aims to use Machine learning to help doctors identify a type of anemia called Iron Deficiency Anemia (IDA). We do this by looking at blood test results called Complete Blood Counts (CBC). This helps save money compared to other tests. Our method works well with different sets of data, which is helpful for doctors. Below are the steps to try out our application.
+
+Our project aims to use Machine Learning to help doctors identify a type of anemia called Iron deficiency anemia  (IDA). IDA diagnosis requires both complete blood count (CBC) and serum ferritin tests. In the current model we used blood cell features (count and morphology) to identify IDA with out the need for addition serum ferritin test, thus saving the cost. Our method works well on different sets of data. Below are the steps to try our application.
 
 <!-- GETTING STARTED -->
 ## Getting Started
